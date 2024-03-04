@@ -13,7 +13,7 @@ const Head = () => {
       clearTimeout(timer);
   }
 
-
+// eslint-disable-next-line
   },[searchres]);
 
   const dispatch = useDispatch();
