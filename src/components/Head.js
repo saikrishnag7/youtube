@@ -13,7 +13,6 @@ const Head = () => {
       clearTimeout(timer);
   }
 
-// eslint-disable-next-line
   },[searchres]);
 
   const dispatch = useDispatch();
@@ -40,7 +39,7 @@ const Head = () => {
       <input type="text" className="h-9 w-1/2 rounded-l-2xl border border-gray-400" onFocus={() => setShowSuggestions(true)} onBlur={() => setShowSuggestions(false)}    value ={searchres} onChange={(e) => setsearchres(e.target.value)}placeholder='Search'></input>
       <button><img alt ="search" className = "h-9 border border-gray-400 rounded-r-2xl" src="https://t3.ftcdn.net/jpg/05/99/84/86/360_F_599848646_MdK7wVDJQZygObyKEahVkOuhh0IGdTt3.jpg"/></button>
     </div>
-    {showSuggestions && <div className ="fixed w-[38rem] py-2 px-4 mx-[32rem] mt-[37px]  bg-gray-100">
+    {showSuggestions && <div className ="fixed w-[30rem] py-2 px-4 mx-[25rem] mt-[37px]  bg-gray-100">
       <ul>
         {sugg.map((s) =>(
           <li className ="hover:bg-gray-300">{s}</li>

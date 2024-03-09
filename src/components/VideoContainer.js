@@ -9,9 +9,7 @@ function VideoContainer() {
   const [videos, setvideos] =useState([]);
 
   useEffect(() =>{
-    getVideos();
-    // eslint-disable-next-line
-    
+    getVideos();    
   },[]);
   const getVideos = async() =>{
     const data = await fetch(youtubeapi);
